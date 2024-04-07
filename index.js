@@ -28,16 +28,28 @@ function generatePasswords() {
     }
 }
 
-function copyToClipboard() {
+function copyToClipboard1() {
+    if (mypassword1.textContent !== "")
+        navigator.clipboard.writeText(mypassword1.textContent).then(() => {
+            alert('Content copied to clipboard');
+            /* Resolved - text copied to clipboard successfully */
+        },
+        () => {
+            console.error('Failed to copy');
+            /* Rejected - text failed to copy to the clipboard */
+        });
+}
 
-    navigator.clipboard.writeText(mypassword1.textContent).then(() => {
-        alert('Content copied to clipboard');
-        /* Resolved - text copied to clipboard successfully */
-    },
-    () => {
-        console.error('Failed to copy');
-        /* Rejected - text failed to copy to the clipboard */
-    });
-  }
+function copyToClipboard2() {
+    if (mypassword2.textContent !== "")
+        navigator.clipboard.writeText(mypassword2.textContent).then(() => {
+            alert('Content copied to clipboard');
+            /* Resolved - text copied to clipboard successfully */
+        },
+        () => {
+            console.error('Failed to copy');
+            /* Rejected - text failed to copy to the clipboard */
+        });
+}
 
 
