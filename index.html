@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet"/>      
+</head>
+<body>
+    <section class="hero">
+        <div class="hero-copy">
+            <h1>Strong Passwords Made Easy!</h1>
+            <p class="subheading-text">Get rid of weak, reused passwords and protect your online accounts with our free random password generator.</p>
+            <ul>
+                <li>100% Secure</li>
+                <li>Click to Copy</li>
+                <li>Set your desired length</li>
+            </ul>
+            <button onclick="generatePasswords()">Try it for free</button>     
+
+        </div>
+        <div class="white-padding">
+            <div class="dark-bkg">
+                <div class="headings-group">
+                    <h2>Generate a <br> <span class="green-text">random password</span></h2>
+                    <p class="supporting-text">Never use an insecure password again.</p>
+                </div>
+    
+                <div class="cta">
+                    <p class="label">Enter password length (from 8 to 20).</p>
+                    
+                    <div class="v-flex-12">
+                        <form>
+                            <input class="setLenForm" type="number" id="passwordLength" name="pwdLen" min="8" max="20" value="15" step="1" placeholder="Enter length">
+                        </form>
+                        <button onclick="generatePasswords()">Generate passwords</button>     
+                    </div>
+                    <div id="errorMessage"></div>
+    
+                    <div class="line"></div>
+                    <div class="passwords-group">
+                        <div id="password1" class="password" onclick="copyToClipboard()"></div>
+                        <div id="password2" class="password" onclick="copyToClipboard()"></div>
+                    </div>
+    
+                </div>
+            </div> 
+        </div>
+       
+    </section>
+
+    
+    <script src="index.js"></script>
+</body>
+</html>
