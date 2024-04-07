@@ -1,5 +1,7 @@
 # Password-Generator - A Secure and User-Friendly Tool
 
+[Link to project here](https://blessingojediran.github.io/Password-Generator/)
+
 This project provides a user-friendly and secure random password generator to help individuals create strong, unique passwords for their online accounts.
 
 ## Key Features:
